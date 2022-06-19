@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>test pc usage</title>
+
+    <!-- Bootstrap CSS -->
+</head>
+<body>
+    <div>
+        <h3>Запрос всех видов загрузки:</h3>
+            <ul>url -  http://127.0.0.1:8000/usage_all, метод - GET</ul>
+        <hr>
+        <h3>Запрос определенного вида загрузки:</h3>
+            <ul>url -  http://127.0.0.1:8000/usage_detail/, метод - POST</ul>
+            <ul>body: key - usage_type, value - CPU/RAM</ul>
+        <hr>
+        <h3>Запрос данных из Redis</h3>
+            <ul>url -  http://127.0.0.1:8000/get_redis_data/, метод - GET</ul>
+        <hr>
+        <h3>Запрос на удаление данных из Redis</h3>
+            <ul>url -  http://127.0.0.1:8000/usage_detail/, метод - POST</ul>
+            <ul>body: key - start_date, value - 06:19:15:33:44</ul>
+            <ul>body: key - stop_date, value - 06:20:15:33:44</ul>
+        <hr>
+    </div>
+</body>
+</html>
